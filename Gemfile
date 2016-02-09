@@ -54,4 +54,6 @@ gem "font-awesome-rails"
 
 gem 'devise'
 
+gem 'annotate'
+
 
