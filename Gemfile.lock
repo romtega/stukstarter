@@ -1,3 +1,10 @@
+GIT
+  remote: git://github.com/nerian/bootstrap-wysihtml5-rails.git
+  revision: bfb0617a86ae057707c729ec22a140dcf252a26c
+  specs:
+    bootstrap-wysihtml5-rails (0.3.3.7)
+      railties (>= 3.0)
+
 GEM
   remote: https://rubygems.org/
   specs:
@@ -135,6 +142,9 @@ GEM
     sdoc (0.4.1)
       json (~> 1.7, >= 1.7.7)
       rdoc (~> 4.0)
+    simple_form (3.2.0)
+      actionpack (~> 4.0)
+      activemodel (~> 4.0)
     spring (1.6.3)
     sprockets (3.5.2)
       concurrent-ruby (~> 1.0)
@@ -168,6 +178,7 @@ PLATFORMS
 DEPENDENCIES
   annotate
   bootstrap-sass (~> 3.3.6)
+  bootstrap-wysihtml5-rails!
   byebug
   coffee-rails (~> 4.1.0)
   devise
@@ -177,6 +188,7 @@ DEPENDENCIES
   rails (= 4.2.4)
   sass-rails (~> 5.0)
   sdoc (~> 0.4.0)
+  simple_form
   spring
   sqlite3
   turbolinks
