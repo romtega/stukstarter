@@ -25,7 +25,7 @@ class ProjectsController < ApplicationController
 	end
 
 	def show
-
+		@rewards = @project.rewards
 	end
 
 	def new 
@@ -55,7 +55,7 @@ class ProjectsController < ApplicationController
 				format.html { redirect_to @project, notice: "Project was succesfully updated!"}
 				format.json { render :show, status: :ok, location: @project }
 			else
-				format.html { redirect_to :edit }
+				format.html { render :edit }
 				format.json { render json: @project.errors, status: :unprocessable_entity }
 			end
 		end
@@ -64,8 +64,8 @@ class ProjectsController < ApplicationController
 	def destroy
 		@project.destroy
 		respond_to do |format|
-				format.html { redirect_to project_path, notice: "Project was succesfully destroyed!"}
-				format.json { head :no_content }
+			format.html { redirect_to project_path, notice: "Project was succesfully destroyed!"}
+			format.json { head :no_content }
 		end
 	end
 
