@@ -1,6 +1,6 @@
 class Pledge < ActiveRecord::Base
-	belong_to :user
-    belong_to :reward
+	belongs_to :user
+    belongs_to :reward
 
     before_validation :generate_uuid, :on => :create
     validates_presence_of :name, :address, :city, :country, :postal_code, :amount, :user_id
